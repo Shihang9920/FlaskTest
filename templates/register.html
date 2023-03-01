@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <style>
+
+        .container{
+            height: 300px;
+            width: 500px;
+            font-family: "DejaVu Sans Mono",system-ui;
+            font-style: normal;
+            font-size: 15px;
+            color: #6f42c1;
+
+            line-height: 50px;
+
+
+        }
+        .bar{
+            color: #bb2d3b;
+        }
+        #title{
+            text-align: center;
+        }
+        table td{
+            border: 1px solid darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+<div class="bar">
+    <span>Website</span>
+    <span style="float: right"><a href="/">Exit</a> </span>
+    <hr>
+</div>
+<div class="container">
+    <form method="post" action="/register">
+        <table>
+            <tr>
+                <td id="title">Register</td>
+            </tr>
+            <tr>
+                <td><label>username:<input type="text" name="username"></label></td>
+            </tr>
+            <tr>
+                <td><label>password:<input type="password" name="password"></label></td>
+            </tr>
+            <tr>
+                <td><label>Gender:
+                    <input type="radio" name="gender" value=1>male
+                    <input type="radio" name="gender" value=2>female
+                </label></td>
+            </tr>
+            <tr>
+                <td><label>Language:
+                    <input type="checkbox" name="language" value=1>c
+                    <input type="checkbox" name="language" value=2>c++
+                    <input type="checkbox" name="language" value=3>java
+                    <input type="checkbox" name="language" value=4>go
+                </label></td>
+            </tr>
+            <tr>
+                <td><label>
+                    City:
+                    <select>
+                        <option name="city" value="bj">Beijing</option>
+                        <option name="city" value="sh">Shanghai</option>
+                        <option name="city" value="wh">Wuhan</option>
+                    </select>
+                </label></td>
+            </tr>
+            <tr>
+                <td><label>
+                    <textarea name="message"></textarea>
+                </label></td>
+            </tr>
+            <tr>
+                <td><label><input type="submit"></label></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
