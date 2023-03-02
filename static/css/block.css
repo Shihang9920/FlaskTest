@@ -1,0 +1,46 @@
+.block{
+    height: 500px;
+}
+.inblock{
+    width: 1280px;
+    margin: 20px auto;
+}
+.blockleft{
+    float: left;
+    background: darkgray;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+.blockright{
+    float: right;
+    background: #9ec5fe;
+    height: 500px;
+    width: 960px;
+    border-radius: 10px;
+}
+.blockleft .avatar{
+
+    height: 120px;
+    border-radius: 10px;
+
+}
+
+.blockleft .avatar img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px 100px;
+}
+.blockleft .username{
+    font-family: "Microsoft YaHei UI", system-ui;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.blockleft .describe{
+    margin: 5px 8px;
+    color: black;
+    font-size: 15px;
+}
