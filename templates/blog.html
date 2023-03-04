@@ -3,8 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <style>body {
+        padding-top: 70px;
+    }</style>
 </head>
 <body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="col-sm-7">
+
+    </div>
+    <div class="col-sm-5">
+        <button class="btn btn-group-xs btn-primary navbar-left navbar-btn" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-9">
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+        <div class="media">
+            <div class="media-left media-middle">
+                <a href="#">
+                    <img class="media-object" src="/static/images/xianbei.png" style="height: 50px;width: 50px"
+                         alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Wellcome to my website</h4>测试
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">最新推荐</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Panel heading without title</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+            <div class="panel-body">Panel content</div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <span class="label label-default">Linux</span>
+                <span class="label label-primary">Kubernetes</span>
+                <span class="label label-success">Docker</span>
+                <span class="label label-info">Python</span>
+                <span class="label label-warning">Golang</span>
+                <span class="label label-danger">Rust</span>
+            </div>
+        </div>
+    </div>
+    <div aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
 
 </body>
 </html>
