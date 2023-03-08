@@ -18,20 +18,20 @@ def login():
         print(name, password)
 
 
-@app.route('/register', methods=["GET", "POST"])
-def register():
-    if request.method == "GET":
-        return render_template('register.html')
-    else:
-        name = request.form.get('username')
-        password = request.form.get('password')
-        gender = request.form.get('gender')
-        language = request.form.getlist('language')
-        city = request.form.get('city')
-        message = request.form.get('message')
-        print(name, password, gender, language, city, message)
-        return "Done"
-
+# @app.route('/register', methods=["GET", "POST"])
+# def register():
+#     if request.method == "GET":
+#         return render_template('register.html')
+#     else:
+#         name = request.form.get('username')
+#         password = request.form.get('password')
+#         gender = request.form.get('gender')
+#         language = request.form.getlist('language')
+#         city = request.form.get('city')
+#         message = request.form.get('message')
+#         print(name, password, gender, language, city, message)
+#         return "Done"
+#
 
 @app.route('/getregister')
 def get_register():
