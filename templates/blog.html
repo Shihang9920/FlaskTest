@@ -6,29 +6,65 @@
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.css">
     <style>
-        body {
-            padding-top: 70px;
+        .media{
+            border: 1px solid #dddddd;
+            box-shadow: 5px 5px 10px #aaa;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
-    <div class="col-sm-7">
 
-    </div>
-    <div class="col-sm-5">
-        <button class="btn btn-group-xs btn-primary navbar-left navbar-btn" type="button">
-            Messages <span class="badge">4</span>
-        </button>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">点击</button>
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">当前用户 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">个人资料</a></li>
+                        <li><a href="#">我的账户</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
+
 <div class="container">
     <div class="col-sm-9">
 
@@ -37,6 +73,7 @@
             <p>...</p>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
         </div>
+
         <div class="media">
             <div class="media-left media-middle">
                 <a href="#">
@@ -53,11 +90,12 @@
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                     <i class="fa fa-star-o" aria-hidden="true"></i>
                 </div>
-                Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
-                
+                Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize
+                prebuilt grid system and components, and bring projects to life with powerful JavaScript
+                plugins.Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass,
+                utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript
+                plugins.
                 <div><i class="fa fa-calendar-o" aria-hidden="true">&nbsp2023-3-05</i></div>
-            
-            
             </div>
         </div>
         <div class="media">
@@ -121,7 +159,6 @@
         </ul>
     </div>
 </div>
-
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
