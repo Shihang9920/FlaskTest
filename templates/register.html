@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #aaa;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="h1" align="center">账号注册</h1>
+    <form method="post" action="/register">
+        <div class="mb-3">
+            用户名
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="mb-3">
+            密码<input type="password" class="form-control" name="password">
+        </div>
+        <div class="mb-3">
+            部门
+            {#            <input type="text" class="form-control" name="department">#}
+            <select class="form-control" name="department">
+                <option value="dev">开发组</option>
+                <option value="test">测试组</option>
+                <option value="ops">运维组</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            邮箱
+            <input type="text" class="form-control" name="email">
+        </div>
+        <button type="submit" class="btn btn-primary">注册</button>
+    </form>
+</div>
+</body>
+</html>

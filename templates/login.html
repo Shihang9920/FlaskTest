@@ -5,7 +5,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
     <style>
-        .container{
+        .container {
             width: 400px;
             height: 400px;
             margin: 200px auto;
@@ -21,21 +21,20 @@
     <form method="post" action="/login">
         <h1 style="text-align: center">Login</h1>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">邮箱</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
+            <label for="exampleInputEmail1" class="form-label">用户名</label>
+            <input type="text" class="form-control" name="name">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">密码</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" name="password">
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">验证</label>
-        </div>
+        {#        <div class="mb-3 form-check">#}
+        {#            <input type="checkbox" class="form-check-input" id="exampleCheck1">#}
+        {#            <label class="form-check-label" for="exampleCheck1">验证</label>#}
+        {#        </div>#}
         <button type="submit" class="btn btn-primary">登录</button>
         <div style="margin: 10px auto;">
-            <a href="/register" style="text-decoration: none">注册账号</a>
+            <a href="/register" style="text-decoration: none">没有账号，去注册</a>
         </div>
 
     </form>
